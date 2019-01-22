@@ -392,6 +392,9 @@
             console.log("Ads are not initialized. Please initialize them first");
             return;
         }
+        if (!ads_state.ready) {
+            console.log("Ad is not ready. Please make sure ad is ready to be shown");
+        }
         ads_state.frame_element.style.display = '';
         setTimeout(function(){
             ads_state.window_frame.postMessage(JSON.stringify({method: 'show'}), '*');
