@@ -407,10 +407,10 @@
     function removeAdsWidget() {
         if (ads_state.frame_element) {
             ads_state.frame_element.parentNode.removeChild(ads_state.frame_element);
-            ads_state.init = false;
-            ads_state.ready = false;
-            ads_state.frame_element = null;
-            ads_state.window_frame = null;
+            OKSDK.Ads.State.init = ads_state.init = false;
+            OKSDK.Ads.State.ready = ads_state.ready = false;
+            OKSDK.Ads.State.frame_element = ads_state.frame_element = null;
+            OKSDK.Ads.State.window_frame = ads_state.window_frame = null;
         }
     }
 
