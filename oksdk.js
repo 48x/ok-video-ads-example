@@ -407,12 +407,10 @@
     function removeAdsWidget() {
         if (ads_state.frame_element) {
             ads_state.frame_element.parentNode.removeChild(ads_state.frame_element);
-            ads_state = {
-                init: false,
-                ready: false,
-                frame_element: null,
-                window_frame: null,
-            };
+            ads_state.init = false;
+            ads_state.ready = false;
+            ads_state.frame_element = null;
+            ads_state.window_frame = null;
         }
     }
 
