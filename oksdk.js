@@ -409,7 +409,9 @@
             ads_state.frame_element.parentNode.removeChild(ads_state.frame_element);
             ads_state = {
                 init: false,
-                ready: false
+                ready: false,
+                frame_element: null,
+                window_frame: null,
             };
         }
     }
