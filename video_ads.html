@@ -61,6 +61,7 @@
             return;
         }
 
+        console.log(JSON.stringify(message));
         var data = JSON.parse(message.data);
 
         if (!data.call || !data.call.method) {
