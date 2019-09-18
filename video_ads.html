@@ -44,8 +44,8 @@
                document.getElementById("log").textContent += getCurrentTime() +  " [WEB] " + JSON.stringify(arguments); + "\n";
            };
             var config = {
-                app_id: 1251640576,      // <-- insert APP ID here
-                app_key: 'CBAGILJLEBABABABA'     // <-- insert APP PUBLIC KEY here
+                app_id: OKSDK.Util.getRequestParameters().apiconnection.split("_")[0],      // <-- insert APP ID here
+                app_key: OKSDK.Util.getRequestParameters().application_key     // <-- insert APP PUBLIC KEY here
             };
 
             OKSDK.init(config, function () {
