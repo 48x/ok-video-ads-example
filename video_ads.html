@@ -43,6 +43,7 @@
                console.log(arguments);
                document.getElementById("log").textContent += getCurrentTime() +  " [WEB] " + JSON.stringify(arguments); + "\n";
            };
+           FAPI.init();
             var config = {
                 app_id: OKSDK.Util.getRequestParameters().apiconnection.split("_")[0],      // <-- insert APP ID here
                 app_key: OKSDK.Util.getRequestParameters().application_key     // <-- insert APP PUBLIC KEY here
