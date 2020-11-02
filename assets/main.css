@@ -108,10 +108,10 @@ textarea {
     border: 1px solid #F0F0F0;
     border-radius: 8px;
     transition: 0.25s ease-in-out;
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -ms-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
+    -webkit-transition: box-shadow 0.25s ease-in-out;
+    -moz-transition: box-shadow 0.25s ease-in-out;
+    -ms-transition: box-shadow 0.25s ease-in-out;
+    -o-transition: box-shadow 0.25s ease-in-out;
     width: 928px;
     min-width: 928px;
     max-width: 928px;
