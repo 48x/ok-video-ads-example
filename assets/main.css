@@ -113,6 +113,8 @@ textarea {
     -ms-transition: 0.25s ease-in-out;
     -o-transition: 0.25s ease-in-out;
     width: 928px;
+    min-width: 928px;
+    max-width: 928px;
     margin-bottom: 15px;
 }
 
