@@ -7,7 +7,7 @@ function showRewardedAd() {
 }
 
 function showInterstitialAd() {
-    FAPI.UI.showLoadedAd();
+    FAPI.UI.showAd();
 }
 
 function getCurrentTime() {
