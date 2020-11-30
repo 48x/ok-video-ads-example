@@ -18,3 +18,11 @@ function getCurrentTime() {
 function clearLog() {
     document.getElementById("log").textContent = "";
 }
+
+function goBack() {
+    if (OKApp) {
+        OKApp.back();
+    }
+
+    window.history.back();
+}
