@@ -20,9 +20,9 @@ function clearLog() {
 }
 
 function goBack() {
-    if (OKApp) {
-        OKApp.back();
+    if (FAPI.Util.getRequestParameters().mob_platform == "android") {
+        window.parent.close();
+        return;
     }
-
     window.history.back();
 }
