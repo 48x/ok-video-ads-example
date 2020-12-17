@@ -12,9 +12,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         var platform = FAPI.Util.getRequestParameters().mob_platform;
         if (platform !== "android") {
-            document.getElementById("interstitial_btn").disabled = true;
             document.getElementById("not_supported").style = "display: block";
-
         }
         window.API_callback = function() {
             console.log(arguments);
@@ -55,8 +53,6 @@
                 </div>
                 <textarea id="log" class="event-log" readonly rows="10"></textarea>
                 <input class="button-pro" type="submit" value="Clear" onclick="clearLog()">
-                <input class="button-pro" style="display:none" type="submit" value="Back" onclick="goBack()">
-                <a target="_blank" href="https://google.com/" style="display:none">ссылка</a>
             </div>
         </div>
     </div>
