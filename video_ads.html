@@ -11,9 +11,6 @@
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         var platform = FAPI.Util.getRequestParameters().mob_platform;
-        if (platform !== "android") {
-            document.getElementById("not_supported").style = "display: block";
-        }
         window.API_callback = function() {
             console.log(arguments);
             document.getElementById("log").textContent += getCurrentTime() + JSON.stringify(arguments) + "\n\n";
@@ -41,9 +38,6 @@
                     <p>
                     Документация: <a href="https://apiok.ru/apps/features/interstitial_ads" target="_blank">interstitial ads docs</a>
                     </p>
-                    <div id="not_supported" class="warning" style="display: none;">
-                        На текущий момент данный вид рекламы доступен только на платформе <b>android</b>
-                    </div>
                 </div>
                 <input class="button-pro" type="submit" value="Show Interstitial Ad" id="interstitial_btn" onclick="showInterstitialAd()">
             </div>
