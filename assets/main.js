@@ -21,6 +21,9 @@ function clearLog() {
 
 function goBack() {
     var platform = new URL(window.location.href).searchParams.get("vk_platform");
+    if (platform) {
+        document.getElementById("log").textContent += getCurrentTime() + platform + "\n\n";
+    }
     if (platform == "mobile_web" || platform == "desktop_web") {
         window.history.back();
     } else {
