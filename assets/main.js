@@ -27,6 +27,7 @@ function goBack() {
     if (platform === "mobile_web" || platform === "desktop_web") {
         window.history.back();
     } else {
-        window.parent.close();
+        document.getElementById("log").textContent += getCurrentTime() + platform + "\n\n";
+        bridge.send("VKWebAppClose", {"status": "success", "payload": {"name": "test"} });
     }
 }
