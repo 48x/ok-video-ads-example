@@ -20,5 +20,10 @@ function clearLog() {
 }
 
 function goBack() {
-    window.history.back();
+    var platform = new URL(window.location.href).searchParams.get("vk_platform");
+    if (platform == "mobile_web" || platform == "desktop_web") {
+        window.history.back();
+    } else {
+        window.parent.close();
+    }
 }
