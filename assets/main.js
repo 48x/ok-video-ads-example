@@ -24,7 +24,7 @@ function goBack() {
     if (platform) {
         document.getElementById("log").textContent += getCurrentTime() + platform + "\n\n";
     }
-    if (platform == "mobile_web" || platform == "desktop_web") {
+    if (platform === "mobile_web" || platform === "desktop_web") {
         window.history.back();
     } else {
         window.parent.close();
